@@ -73,7 +73,7 @@
 		  column-gap: 2%;
 		}
 		.wrapper p{padding:1%;}
-		@media only screen and (max-width: 1026px) {
+		@media only screen and (max-width: 900px) {
 			.wrapper {
 			  display: grid;
 			  grid-template-columns: 1fr;
@@ -88,6 +88,8 @@
 		}
 		.wrapper div:nth-child(3), .wrapper div:nth-child(2){text-align: center;}
 		#old{ height: 150px; border-radius:50%;  display:block; margin:auto; padding:0;}
+		#footerContent{display:block; padding-bottom:5%; padding-top:2%; text-align: center;}
+		footer, footer div{background-color:rgb(229, 222, 239);}
 	</style>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
@@ -212,6 +214,24 @@
 			</div>
 			<hr><br>
 	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-6" id="footerContent">
+					<h3>Our contacts</h3>
+					<a href="#">orchidnursery.com</a><br>
+					<label>Phone: +38067 456 42 78</label><br>
+					<label>Zhmerynka village, st.Vyhovskoho 21</label>
+				</div>
+				<div class="col-6" id="footerContent">
+					<h3>Work time</h3>
+					<label>Monday - Friday: 10am - 6pm</label><br>
+					<label>Saturday, Sunday: 12am - 4pm</label>
+				</div>
+			</div>
+		</div>
+  </footer>
+  
 	<script>
 		function myFunction(imgs) {
 		  var expandImg = document.getElementById("expandedImg");
