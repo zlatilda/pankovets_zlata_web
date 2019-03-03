@@ -103,9 +103,9 @@
 	<div  id="fitochka">
 		<div id="title">
 			<div class="row">
-				<div class=" col-xs-12 col-sm-7 col-md-7 col-lg-7"><h1>Zhmerynka orchid nursery</h1>
+				<div class=" col-xs-12 col-sm-8 col-md-7 col-lg-7"><h1>Zhmerynka orchid nursery</h1>
 				<p>The best orchid nursery is always at your service!</p></div>
-				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5"><img id="ico" src="pics/Draculaerythrochaete2_large.jpg"></div>
+				<div class="col-xs-12 col-sm-4 col-md-5 col-lg-5"><img id="ico" src="pics/Draculaerythrochaete2_large.jpg"></div>
 			</div>
 		</div>
 	</div>
@@ -183,43 +183,45 @@
 				<div><img id="old" src="pics/grandmother.jpg"><label>Ivanna Matskevich<label></div>
 			</div>
 			<hr>
-			<h2>Our assortment</h2><br>
-			<div class="row" id="section2">
-				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
-					<h4>Orchids</h4>
-						<p>A great viriety of exclusive, natural genus of <b>phalaenopsis</b>,diversity of <b>vandas</b>, <b>oncidiums</b>,
-						the queen of orchids <b>cattleya</b>, <b>lycastas</b>, <b>catasetums</b>, <b>dendrobiums</b>, big, medium and miniature <b>cymbidiums</b>,
-						hibryds and natural genuses of different orchids, exotic orchids like <b>bulbophyllums</b>, <b>brassias</b>, the perl of Africa - 
-						<b>podangis</b>, <b>encyclia</b>, <b>gongora</b> - a jewel orchid, and many others!</p>
-						
+			<div id="section2">
+				<h2>Our assortment</h2><br>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+						<h4>Orchids</h4>
+							<p>A great viriety of exclusive, natural genus of <b>phalaenopsis</b>,diversity of <b>vandas</b>, <b>oncidiums</b>,
+							the queen of orchids <b>cattleya</b>, <b>lycastas</b>, <b>catasetums</b>, <b>dendrobiums</b>, big, medium and miniature <b>cymbidiums</b>,
+							hibryds and natural genuses of different orchids, exotic orchids like <b>bulbophyllums</b>, <b>brassias</b>, the perl of Africa - 
+							<b>podangis</b>, <b>encyclia</b>, <b>gongora</b> - a jewel orchid, and many others!</p>
+							
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+						<h4>Cacti</h4>
+						<p>We have an exquisite cacti collection as well. Cold-loving <b>Schlumbergera</b>, <b>Epihpyllum</b> and <b>Hilocereus</b> won't
+						make you any trouble growing at kind of shady and colder rooms, exotic <b>Mammilaria</b>, <b>Notocactus</b>, <b>Opuncia</b> 
+						feel themselves perfect being placed on sunny windowsill with direct sun, tolerate extreme temperatures - both very hot and below zero.
+						Also such beautiful jams as <b>Ferocactus</b>, different kinds of <b>Rebutia</b> and <b>Echinopsis</b> are avalible.</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+						<h4>Bromeliaceae</h4>
+						<p>What can be more eyecatching exotic addition to your plants collection than a Bromeliaceae species? <b>Billbergia</b>, 
+						<b>Vriesea</b>, <b>Tillandsia</b> have beautiful leafs as well as flower spikes, you'll definatelly enjoy gorgeous beauty 
+						of <b>Aechmea</b> and <b>Nidularium</b>! Just come to our nursery and see!</p>
+					</div>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-					<h4>Cacti</h4>
-					<p>We have an exquisite cacti collection as well. Cold-loving <b>Schlumbergera</b>, <b>Epihpyllum</b> and <b>Hilocereus</b> won't
-					make you any trouble growing at kind of shady and colder rooms, exotic <b>Mammilaria</b>, <b>Notocactus</b>, <b>Opuncia</b> 
-					feel themselves perfect being placed on sunny windowsill with direct sun, tolerate extreme temperatures - both very hot and below zero.
-					Also such beautiful jams as <b>Ferocactus</b>, different kinds of <b>Rebutia</b> and <b>Echinopsis</b> are avalible.</p>
+				<br>
+				<div class="row no-gutter" id="gallery">
+				<script id="img-template" type="text/x-handlebars-template">
+				{{#each pics}}
+				  <div class="col-md-2 col-lg-2 col-sm-4 col-4" id="frame">
+					<a class="nav-link"><img id="smallPic" src="pics/{{this.item}}.jpg" onclick="myFunction(this);"></a>
+				  </div>
+				  {{/each}}
+				  </script>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-					<h4>Bromeliaceae</h4>
-					<p>What can be more eyecatching exotic addition to your plants collection than a Bromeliaceae species? <b>Billbergia</b>, 
-					<b>Vriesea</b>, <b>Tillandsia</b> have beautiful leafs as well as flower spikes, you'll definatelly enjoy gorgeous beauty 
-					of <b>Aechmea</b> and <b>Nidularium</b>! Just come to our nursery and see!</p>
+				<div class="container">
+				  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+				  <img id="expandedImg" >
 				</div>
-			</div>
-            <br>
-			<div class="row no-gutter" id="gallery">
-			<script id="img-template" type="text/x-handlebars-template">
-			{{#each pics}}
-			  <div class="col-md-2 col-lg-2 col-sm-4 col-4" id="frame">
-				<a class="nav-link" href="#expandedImg"><img id="smallPic" src="pics/{{this.item}}.jpg" onclick="myFunction(this);"></a>
-			  </div>
-			  {{/each}}
-			  </script>
-			</div>
-			<div class="container">
-			  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-			  <img id="expandedImg" >
 			</div>
 			<hr><br>
 			
