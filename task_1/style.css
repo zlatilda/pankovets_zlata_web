@@ -32,6 +32,7 @@ h1{font-family:"Comic Sans MS";}
 			text-align:center;
 			color:white;
 		}
+		html{scroll-behavior: smooth;}
 		body
 		{
 			background:url('pics/1200px-Ixia_African_Corn_Lilies.jpg') no-repeat;
