@@ -42,4 +42,23 @@ function myFunction(imgs) {
   const benefit_card_template = $("#benefits-template").html();
   const benefits_elements = Handlebars.compile(benefit_card_template)(benefits_data);
   $("#section3").append(benefits_elements);
+  
+  
+  $( window ).resize(function() {
+	var img = document.querySelectorAll("[id='frame']");
+	if($(window).width() < 200)
+	{
+		for(let i=0; i<12; i++)
+		{
+			img[i].className = "col-md-4 col-lg-2 col-sm-4 col-12";
+		}
+	}
+	else
+	{
+		for(let i=0; i<12; i++)
+		{
+			img[i].className = "col-md-4 col-lg-2 col-sm-4 col-6";
+		}
+	}
+});
  
